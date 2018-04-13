@@ -1,9 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 ruby:
-  title: MyString
+  title: Programming Ruby 1.9
   description: MyText
   image_url: dcbang.jpg
+  price: 9.99
+
+one:
+  title: MyString
+  description: MyText
+  image_url: 7apps.jpg
   price: 9.99
 
 two:
