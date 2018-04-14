@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 #---
 # Excerpted from "Agile Web Development with Rails 5",
 # published by The Pragmatic Bookshelf.
@@ -7,10 +8,11 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails5 for more book information.
 #---
 # encoding: utf-8
+
 Product.delete_all
 Product.create!(title: 'Rails, Angular, Postgres, and Bootstrap',
-  description:
-    %{<p>
+                description:
+    %(<p>
       <em>Powerful, Effective, and Efficient Full-Stack Web Development</em>
       As a Rails developer, you care about user experience and performance,
       but you also want simple and maintainable code. Achieve all that by
@@ -20,28 +22,28 @@ Product.create!(title: 'Rails, Angular, Postgres, and Bootstrap',
       full-stack development to create usable, high-performing applications,
       and learn to use these technologies effectively in a Ruby on Rails
       environment.
-      </p>},
-  image_url: 'dcbang.jpg',    
-  price: 45.00)
+      </p>),
+                image_url: 'dcbang.jpg',
+                price: 45.00)
 # . . .
 Product.create!(title: 'Seven Mobile Apps in Seven Weeks',
-  description:
-    %{<p>
+                description:
+    %(<p>
       <em>Native Apps, Multiple Platforms</em>
       Answer the question “Can we build this for ALL the devices?” with a
       resounding YES. This book will help you get there with a real-world
       introduction to seven platforms, whether you’re new to mobile or an
       experienced developer needing to expand your options. Plus, you’ll find
       out which cross-platform solution makes the most sense for your needs.
-      </p>},
-  image_url: '7apps.jpg',
-  price: 26.00)
+      </p>),
+                image_url: '7apps.jpg',
+                price: 26.00)
 # . . .
 
 Product.create!(title: 'Ruby Performance Optimization',
-  description:
-    %{<p>
-      <em>Why Ruby Is Slow, and How to Fix It</em> 
+                description:
+    %(<p>
+      <em>Why Ruby Is Slow, and How to Fix It</em>
       You don’t have to accept slow Ruby or Rails performance. In this
       comprehensive guide to Ruby optimization, you’ll learn how to write
       faster Ruby code—but that’s just the beginning. See exactly what makes
@@ -50,6 +52,6 @@ Product.create!(title: 'Ruby Performance Optimization',
       performance testing, garbage collection, and tuning. You’ll find that
       all those “hard” things aren’t so difficult after all, and your code
       will run orders of magnitude faster.
-      </p>},
-  image_url: 'adrpo.jpg',
-  price: 46.00)
+      </p>),
+                image_url: 'adrpo.jpg',
+                price: 46.00)
