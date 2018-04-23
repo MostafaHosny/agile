@@ -8,7 +8,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     @update = {
       title: 'Lorem Ipsum',
       description: 'Wibbles are fun!',
-      image_url: 'lorem.jpg',
+      image_url: 'dcbang.jpg',
       price: 19.95
     }
   end
@@ -46,6 +46,12 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to product_url(@product)
   end
 
+  test 'can not delete product with line items' do
+    assert_difference('Product.count' , 0) do 
+      delete product_url(products(:two))
+    end
+    assert_redirected_to products_url
+  end 
   test 'should destroy product' do
     assert_difference('Product.count', -1) do
       delete product_url(@product)
